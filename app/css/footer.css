@@ -1,0 +1,16 @@
+.footer_part{
+    background-color: var( --primary-sub-color);
+}
+
+.footer_content{
+    width: 75%;
+    color: var(--secondary-sub-color);
+    margin: auto;
+    text-align: center;
+}
+
+.icon-style {
+    color: white;
+    font-size: 40px;
+    padding:0 5px;
+  }
