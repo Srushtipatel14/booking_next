@@ -115,6 +115,7 @@
     border: 1px solid black;
     border-radius: 10px;
     padding: 5px 20px;
+    cursor: pointer;
   }
 
   .show_movie_name{
