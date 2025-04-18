@@ -102,30 +102,39 @@
 }
 
 .left_carousel2::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -15px;
-  width: 25px;
-  height: 100%;
-  background: repeating-linear-gradient(to bottom,
-      transparent,
-      transparent 10px,
-      var(--primary-sub-color) 10px,
-      var(--primary-sub-color) 20px);
+  content: none;
 }
 
+@media (min-width: 768px) {
+  .left_carousel2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -15px;
+    width: 25px;
+    height: 100%;
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 18px,
+      #470012 20px,
+      #470012 25px
+    );
+  }
+}
+
+
 .right_carousel2 {
-  background-color: #640019;
+  background: linear-gradient(to left,#470012,#030f03);
   flex: 1;
   position: relative;
 }
 
-.right_carousel2::before {
+/* .right_carousel2::before {
   content: "";
   position: absolute;
   top: 0;
-  left: -16px;
+  right: -16px;
   width: 25px;
   height: 100%;
   background: repeating-linear-gradient(to bottom,
@@ -133,7 +142,7 @@
       #640019 10px,
       transparent 10px,
       transparent 20px);
-}
+} */
 
 .carousel_slide2_text{
   font-weight:600 !important;

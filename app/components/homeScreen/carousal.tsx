@@ -55,10 +55,7 @@ const Carousel = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="carousel-slide carousel-slide2">
-            <div className='left_carousel2 d-sm-block pe-3'>
-              <Image src='https://images.deccanherald.com/deccanherald%2F2024-05%2F95ffb1a6-39aa-47b0-a94f-55d67ef13c6f%2FFzz4CTIWIAANZyk.jpg?auto=format%2Ccompress&fmt=webp&fit=max&format=webp&q=70&w=400&dpr=2' alt='slide_image' fill/>
-            </div>
-            <div className='right_carousel2 d-none d-md-block'>
+          <div className='right_carousel2 d-none d-md-block'>
               <div className="d-flex justify-content-center align-items-center gap-1 my-2 d-none d-md-flex">
                 <Image src="/booking_logo.png" alt="web_logo" height={45} width={45}/>
                 <p className="m-0 fs-4" style={{ lineHeight: "1", position: "relative", top: "-3px", color: "#FFFFFF" }}>Bookzy</p>
@@ -71,6 +68,10 @@ const Carousel = () => {
                 <button className='carousel_slide2_btn'>Watch</button>
               </div>
             </div>
+            <div className='left_carousel2 d-sm-block'>
+              <Image src='https://images.deccanherald.com/deccanherald%2F2024-05%2F95ffb1a6-39aa-47b0-a94f-55d67ef13c6f%2FFzz4CTIWIAANZyk.jpg?auto=format%2Ccompress&fmt=webp&fit=max&format=webp&q=70&w=400&dpr=2' alt='slide_image' fill/>
+            </div>
+           
           </div>
         </SwiperSlide>
         <SwiperSlide>
