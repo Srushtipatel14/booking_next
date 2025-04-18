@@ -3,6 +3,7 @@
 import "../../css/userlogin.css";
 import { FiArrowLeft } from "react-icons/fi";
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 const UserOtp = () => {
     const router=useRouter();
@@ -15,8 +16,8 @@ const UserOtp = () => {
                     onClick={() => router.back()} >
                     <FiArrowLeft size={20} />
                 </div>
-                <div>
-                    <img src="/booking_logo.png" alt="web_logo" className="mb-3" style={{ width: "75px" }} />
+                <div >
+                    <Image src="/booking_logo.png" alt="web_logo" height={75} width={75} className="mb-3"/>
                 </div>
                 <div className="mb-3">
                     <p className="login_font">Please enter verification code</p>

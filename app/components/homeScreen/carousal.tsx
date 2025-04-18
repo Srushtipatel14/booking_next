@@ -7,6 +7,7 @@ import 'swiper/css/effect-fade';
 import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
 import '../../css/carousel.css';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 const Carousel = () => {
   const router = useRouter();
@@ -32,11 +33,7 @@ const Carousel = () => {
           <div className="carousel-slide carousel-slide1">
             <div className='left_carousel1 d-sm-block p-sm-3 w-100'>
               <div className="d-flex align-items-center gap-1 mb-4 d-none d-md-flex">
-                <img
-                  src="/booking_logo.png"
-                  alt="web_logo"
-                  style={{ width: "45px", height: "45px" }}
-                />
+                <Image src="/booking_logo.png" alt="web_logo" height={45} width={45}/>
                 <p
                   className="m-0 fs-4 "
                   style={{ lineHeight: "1", position: "relative", top: "-3px", color: "#FFFFFF" }}
@@ -52,18 +49,18 @@ const Carousel = () => {
               </div>
             </div>
             <div className='right_carousel1 d-none d-md-block'>
-              <img src="/ticket.png" alt="ticket_image" style={{ height: "350px", maxWidth: "330px", width: "300px" }} />
+              <Image src="/ticket.png" alt="ticket_image" height={350} width={300}/>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="carousel-slide carousel-slide2">
             <div className='left_carousel2 d-sm-block pe-3'>
-              <img src='https://images.deccanherald.com/deccanherald%2F2024-05%2F95ffb1a6-39aa-47b0-a94f-55d67ef13c6f%2FFzz4CTIWIAANZyk.jpg?auto=format%2Ccompress&fmt=webp&fit=max&format=webp&q=70&w=400&dpr=2' style={{ height: "100%", width: "100%" }} />
+              <Image src='https://images.deccanherald.com/deccanherald%2F2024-05%2F95ffb1a6-39aa-47b0-a94f-55d67ef13c6f%2FFzz4CTIWIAANZyk.jpg?auto=format%2Ccompress&fmt=webp&fit=max&format=webp&q=70&w=400&dpr=2' alt='slide_image' fill/>
             </div>
             <div className='right_carousel2 d-none d-md-block'>
               <div className="d-flex justify-content-center align-items-center gap-1 my-2 d-none d-md-flex">
-                <img src="/booking_logo.png" alt="web_logo" style={{ width: "45px", height: "45px" }} />
+                <Image src="/booking_logo.png" alt="web_logo" height={45} width={45}/>
                 <p className="m-0 fs-4" style={{ lineHeight: "1", position: "relative", top: "-3px", color: "#FFFFFF" }}>Bookzy</p>
               </div>
               <div className='carousel_slide2_text py-3 display-5'>

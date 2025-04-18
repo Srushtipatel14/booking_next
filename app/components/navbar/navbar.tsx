@@ -9,6 +9,7 @@ import "../../css/userlogin.css";
 import Searchfield from "./search";
 import RightBar from "./rightBar";
 import Citymodal from "./citymodal";
+import Image from 'next/image';
 
 const Navbar = () => {
   const [canvasshow, setCanvasShow] = useState(false);
@@ -22,11 +23,7 @@ const Navbar = () => {
           <nav className="navbar px-2 py-2 d-flex justify-content-between align-items-center">
             <div className="d-flex align-items-center gap-4">
               <div className="d-flex align-items-center gap-1" style={{ cursor: "pointer" }} onClick={() => router.push("/")}>
-                <img
-                  src="/booking_logo.png"
-                  alt="web_logo"
-                  style={{ width: "45px", height: "45px" }}
-                />
+                <Image src="/booking_logo.png" alt="web_logo" width={45} height={45} />
                 <p
                   className="m-0 fs-4 d-none d-md-block"
                   style={{ lineHeight: "1", position: "relative", top: "-3px" }}
@@ -74,15 +71,15 @@ const Navbar = () => {
               <div className="d-flex align-items-center gap-2">
                 <button className="signin_btn" onClick={() => router.push("/user/userlogin")}>Sign in</button>
                 <IoMenu size={32} style={{ cursor: "pointer" }} onClick={() => setCanvasShow(true)} />
-                <RightBar canvasshow={canvasshow} setCanvasShow={setCanvasShow}/>
+                <RightBar canvasshow={canvasshow} setCanvasShow={setCanvasShow} />
               </div>
             </div>
           </nav>
         </div>
       ) : (
-        <Searchfield setShowSearch={setShowSearch}/>
+        <Searchfield setShowSearch={setShowSearch} />
       )}
-      
+
     </div>
   );
 };

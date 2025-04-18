@@ -3,6 +3,7 @@
 import "../../css/userlogin.css";
 import { useRouter } from 'next/navigation';
 import { FiArrowLeft } from "react-icons/fi";
+import Image from 'next/image';
 
 const UserLogin = () => {
   const router = useRouter();
@@ -16,7 +17,7 @@ const UserLogin = () => {
           <FiArrowLeft size={20} />
         </div>
         <div>
-          <img src="/booking_logo.png" alt="web_logo" className="mb-3" style={{ width: "75px" }} />
+          <Image src="/booking_logo.png" alt="web_logo" width={75} height={75} className="mb-3"/>
         </div>
         <div className="mb-3">
           <p className="login_font">Please enter your email address for verification</p>

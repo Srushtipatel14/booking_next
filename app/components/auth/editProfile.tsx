@@ -2,6 +2,7 @@
 
 import "../../css/editprofile.css";
 import Footer from "../homeScreen/footer";
+import Image from 'next/image';
 
 const EditProfile = () => {
     return (
@@ -10,11 +11,13 @@ const EditProfile = () => {
                 <form>
                     <section className="acc_detail my-3">
                         <div className="acc_detail1 px-3">
-                            <img
-                                src="/user.png"
-                                alt="user"
-                                className="edit_image position-relative"
-                            />
+                            <div className="edit_image position-relative ">
+                                <Image
+                                    src="/user.png"
+                                    alt="user"
+                                    fill
+                                />
+                            </div>
                         </div>
                         <div className="acc_detail2 px-5 py-2">
                             <div className="fs-4 edit_pro_header my-3">Account Details</div>
@@ -25,7 +28,7 @@ const EditProfile = () => {
                             <div className="d-flex align-items-center mb-3 py-3">
                                 <div className="lable_name">Mobile Number</div>
                                 <div className="input_name">
-                                    <input type="text" placeholder="+Add Mobile Number" className="form-control phone_number"/>
+                                    <input type="text" placeholder="+Add Mobile Number" className="form-control phone_number" />
                                 </div>
                             </div>
                         </div>
@@ -94,7 +97,7 @@ const EditProfile = () => {
                     </section>
                 </form>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     )
 }

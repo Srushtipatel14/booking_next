@@ -1,6 +1,7 @@
-.recommend_movie{
+.recommend_movie {
   background-color: var(--secondary-sub-color);
 }
+
 .movie_wrapper {
   width: 90%;
   overflow: hidden;
@@ -42,14 +43,31 @@
   padding: 3px;
 }
 
-.add_box{
-  background: radial-gradient(circle at center,rgb(215, 25, 33), rgb(1, 1, 1));
+.add_box {
+  background: radial-gradient(circle at center, rgb(215, 25, 33), rgb(1, 1, 1));
   border-radius: 10px;
   width: 80%;
   margin: auto;
   height: 100px;
 }
 
-.ad_text{
-  color:whitesmoke;
+.ad_text {
+  color: whitesmoke;
+}
+
+.latestMovie_wrapper {
+  position: relative;
+  width: 95%;     
+  height: 100%;
+}
+
+.latestMovie_image,.recommendedAllMovie_image {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.recommendedAllMovie_wrapper {
+  position: relative;
+  width: 100%;     
+  height: 80%;
 }

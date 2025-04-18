@@ -1,11 +1,13 @@
 import { Offcanvas } from "react-bootstrap";
 import { useRouter } from 'next/navigation';
-interface RightBarprops{
-    canvasshow:boolean,
-    setCanvasShow:(value:boolean)=>void
+import Image from 'next/image';
+
+interface RightBarprops {
+    canvasshow: boolean,
+    setCanvasShow: (value: boolean) => void
 }
-const RightBar:React.FC<RightBarprops> = ({canvasshow,setCanvasShow}) => {
-     const router = useRouter();
+const RightBar: React.FC<RightBarprops> = ({ canvasshow, setCanvasShow }) => {
+    const router = useRouter();
     return (
         <Offcanvas
             show={canvasshow}
@@ -20,15 +22,9 @@ const RightBar:React.FC<RightBarprops> = ({canvasshow,setCanvasShow}) => {
                         router.push("/user/editprofile")
                     }}>Edit Profile</span>
                 </div>
-                <div> <img
-                    src="/user.png"
-                    alt="user"
-                    style={{
-                        width: "40px",
-                        height: "40px",
-                        borderRadius: "50%",
-                    }}
-                /></div>
+                <div>
+                    <Image src="/user.png" alt="user" height={40} width={40} style={{ borderRadius: "50%" }} />
+                </div>
             </div>
         </Offcanvas>
     )

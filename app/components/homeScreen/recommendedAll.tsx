@@ -7,9 +7,10 @@ import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 import "../../css/recommendedall.css";
 import { useState } from "react";
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 const RecommendedAll = () => {
-    const router=useRouter();
+    const router = useRouter();
     const [showLanguages, setshowlanguages] = useState(false);
     const [showGenres, setShowGenres] = useState(false);
     const [showFormt, setShowFormat] = useState(false);
@@ -86,7 +87,7 @@ const RecommendedAll = () => {
                         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16].map((item) => (
                             <div key={item} className="see-card p-0" onClick={() => router.push("/explore/movie")}>
                                 <div style={{ height: "400px" }} className="mb-3">
-                                    <img
+                                    {/* <img
                                         src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrwFBFgTscQ8nz7a0Vi3BbA5OU0M4Wuu7itw&s`}
                                         style={{
                                             width: "100%",
@@ -95,7 +96,16 @@ const RecommendedAll = () => {
                                             borderRadius: "10px",
                                         }}
                                         alt="movie"
-                                    />
+                                    /> */}
+
+                                    <div className="recommendedAllMovie_wrapper">
+                                        <Image
+                                            src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrwFBFgTscQ8nz7a0Vi3BbA5OU0M4Wuu7itw&s`}
+                                            alt="movie"
+                                            fill
+                                            className="recommendedAllMovie_image"
+                                        />
+                                    </div>
                                     <p className="fs-5 p-0 mt-3 fw-bold">Sikandar</p>
                                     <span>Action,Drama</span>
 
