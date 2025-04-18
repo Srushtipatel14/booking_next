@@ -5,6 +5,7 @@ import { FaStar } from "react-icons/fa";
 import Footer from "./homeScreen/footer";
 import { useRouter } from 'next/navigation';
 import { FiArrowLeft } from "react-icons/fi";
+import Image from 'next/image';
 
 const Moviescreen = () => {
     const router = useRouter();
@@ -58,7 +59,7 @@ const Moviescreen = () => {
                 <div className="cast_scroll mt-4">
                     {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item) => (
                         <div key={item} className="cast-card p-0">
-                            <img className="cast_img" src="https://img.freepik.com/premium-vector/user-icons-includes-user-icons-people-icons-symbols-premiumquality-graphic-design-elements_981536-526.jpg" alt="cast_image" />
+                            <Image height={120} width={120}  src="https://img.freepik.com/premium-vector/user-icons-includes-user-icons-people-icons-symbols-premiumquality-graphic-design-elements_981536-526.jpg"   alt="cast_image" className="cast_img" />
                             <p>Jannelia D'suza</p>
                             <p>Actor</p>
                         </div>

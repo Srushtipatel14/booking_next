@@ -81,8 +81,8 @@ color: white;
 }
 
 .cast_img{
-    width:120px;
     background-color: lightgray;
+    border: 1px solid lightgray;
     border-radius: 50%;
 }
 
